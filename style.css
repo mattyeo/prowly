@@ -115,6 +115,10 @@ input:focus, textarea:focus{
   margin-bottom: 7px;
 }
 
+#presentation-section > h2{
+  margin: 0 18%;
+}
+
 .result{
   height: 50px;
   margin: 5px;
@@ -143,19 +147,14 @@ input:focus, textarea:focus{
   margin-top: 35px;
 }
 
-#modern-media-text{
-  margin: 0 250px;
-}
-
-
-@media screen and (max-width:820px){
+@media screen and (max-width:768px){
 
   #presentation-section {
     margin-top: 40px;
   }
 
-  #modern-media-text{
-    margin: 0 50px;
+  #presentation-section > h2{
+    margin: 0 5%;
   }
 
 

@@ -29,6 +29,7 @@ const autoCompleteArea = document.querySelector('.autocomplete')
 const searchInput = document.querySelector('#input-search');
 const searchResultSuggestion = document.querySelector('.dialog');
 
+
 searchInput.addEventListener('input', (event)=>{
   if(event.target.value != ""){
     searchResultSuggestion.innerHTML = "";
@@ -39,10 +40,9 @@ searchInput.addEventListener('input', (event)=>{
       addResultToList(element);
     }
   });
-  } else {
-    searchResultSuggestion.innerHTML = "";
-  }
-})
+}else{
+  searchResultSuggestion.innerHTML = "";
+}});
 
 searchInput.addEventListener('focus', (event)=>{
   autoCompleteArea.setAttribute('class', 'autocomplete purple-border');
@@ -51,6 +51,8 @@ searchInput.addEventListener('focus', (event)=>{
 searchInput.addEventListener('blur', (event)=>{
   autoCompleteArea.setAttribute('class', 'autocomplete grey-border');
 })
+
+
 
 function addResultToList(person){
   var resultHTML = `<img src="${person.avatar}">
