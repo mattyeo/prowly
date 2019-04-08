@@ -20,43 +20,143 @@ h6{
   font-size: 12px;
 }
 
+button{
+  width: 192px;
+  height: 62px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+
+.purple-bg-color{
+  background-color:#6950fc;
+}
+
 .text-centered{
   text-align:center;
+}
+
+.medium-bold-text{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.subtitle{
+  font-weight: 400;
+  font-size: 14px;
+  color: #929fac;
 }
 
 .purple-color{
   color: #6950fc;
 }
 
+.white-color{
+  color: white;
+}
+
 .darkslategray-color{
   color: #1b2631;
 }
 
-
-
 input::placeholder{
   color: #dee3e8;
 }
-.search-field{
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+.autocomplete{
+  width: 320px;
+  height: auto;
+  max-height: 280px;
+  margin: 70px auto 140px auto ;
+  border-radius: 5px;
   font-family: 'Roboto', sans-serif;
+  background: white;
+  -webkit-box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+  
+}
+
+.purple-border{
+  border: 1px solid #624dfc;
+}
+
+.grey-border{
+  border: 1px solid;
+  border: 1px #DFE5E9 solid;
+}
+
+.autocomplete > input[type="text"]{
   font-weight: 400;
   font-size: 18px;
-  width: 320px;
+  width: 100%;
+  height: 57px;
   padding: 10px 0;
-  border: 1px #DFE5E9 solid;
-  border-radius: 10px;
-  margin: 70px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.dialog{
+  max-height:207px;
+  overflow: scroll;
 }
 
 #presentation-section{
-  margin-top: 80px;
-}
-
-#presentation-section > h2 {
-  margin: 0 12%;
+  margin-top: 70px;
 }
 
 #presentation-section > h6 {
   margin-bottom: 7px;
 }
 
+.result{
+  height: 50px;
+  margin: 5px;
+  text-align: left;
+}
+.result > img{
+  width: 50px;
+  float: left;
+  border-radius: 5px;
+}
+
+.result > .person-detail {
+  margin-left: 50px;
+  padding: 5px 5px;
+}
+
+#input-search{
+  background-image: url("img/search-24px.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 10px 13px;
+  padding: 0 0 0 40px;
+}
+
+#explore-prowly{
+  margin-top: 35px;
+}
+
+#modern-media-text{
+  margin: 0 250px;
+}
+
+
+@media screen and (max-width:820px){
+
+  #presentation-section {
+    margin-top: 40px;
+  }
+
+  #modern-media-text{
+    margin: 0 50px;
+  }
+
+
+}
