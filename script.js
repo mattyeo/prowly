@@ -28,6 +28,7 @@ var searchResultArray = [
 const autoCompleteArea = document.querySelector('.autocomplete')
 const searchInput = document.querySelector('#input-search');
 const searchResultSuggestion = document.querySelector('.dialog');
+const tryButton = document.querySelector('#explore-prowly');
 
 
 searchInput.addEventListener('input', (event)=>{
@@ -52,7 +53,13 @@ searchInput.addEventListener('blur', (event)=>{
   autoCompleteArea.setAttribute('class', 'autocomplete grey-border');
 })
 
-
+tryButton.addEventListener('click', (event)=>{
+  tryButton.setAttribute("class", " purple-bg-color white-color line")
+  setTimeout(function(){
+    tryButton.setAttribute("class", "purple-bg-color white-color")
+  }, 1000)
+  
+})
 
 function addResultToList(person){
   var resultHTML = `<img src="${person.avatar}">

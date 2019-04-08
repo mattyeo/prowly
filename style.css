@@ -28,6 +28,7 @@ button{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   outline: none;
+  transition:1s;
 }
 
 .purple-bg-color{
@@ -146,6 +147,12 @@ input:focus, textarea:focus{
 #explore-prowly{
   margin-top: 35px;
 }
+
+.line{
+  background-color: #09155b;
+  transition: 1s;
+}
+
 
 @media screen and (max-width:768px){
 
